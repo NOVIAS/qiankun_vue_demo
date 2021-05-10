@@ -1,0 +1,14 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_MISSING_PACKAGE_NAME",
+    "err": {
+      "name": "Error",
+      "message": "`pnpm add` requires the package name",
+      "code": "ERR_PNPM_MISSING_PACKAGE_NAME",
+      "stack": "Error: `pnpm add` requires the package name\n    at Object.handler [as add] (C:\\Users\\Novias\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\registry.nlark.com+pnpm@6.3.0\\node_modules\\pnpm\\dist\\pnpm.cjs:112020:13)\n    at Timeout._onTimeout (C:\\Users\\Novias\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\registry.nlark.com+pnpm@6.3.0\\node_modules\\pnpm\\dist\\pnpm.cjs:121001:84)\n    at listOnTimeout (internal/timers.js:554:17)\n    at processTimers (internal/timers.js:497:7)"
+    }
+  }
+}

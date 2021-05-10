@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<header class="header">
+  <nav>
+    <ul>
+      <li onclick="push('/')">基座首页</li>
+      <li onclick="push('/vue2')">Vue2</li>
+      <li onclick="push('/vue3')">Vue3</li>
+    </ul>
+  </nav>
+</header>
+<!-- 子应用容器挂载 -->
+<div id="app-main"></div>
+</body>
+<script>
+  function push (pathUrl) {
+    history.pushState(null, pathUrl, pathUrl)
+  }
+</script>
+</html>

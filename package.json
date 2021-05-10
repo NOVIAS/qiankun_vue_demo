@@ -1,0 +1,26 @@
+{
+  "name": "micro",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "start": "npm-run-all --parallel start:*",
+    "start:main": "cd packages/main && pnpm run start",
+    "start:vue2": "cd packages/vue2 && pnpm run serve",
+    "start:vue3": "cd packages/vue3 && pnpm run serve",
+    "install": "npm-run-all --parallel install:*",
+    "install:main": "cd packages/main && pnpm install",
+    "install:vue2": "cd packages/vue2 && pnpm install",
+    "install:vue3": "cd packages/vue3 && pnpm install",
+    "build": "npm-run-all --parallel build:*",
+    "build:main": "cd packages/main && pnpm run build",
+    "build:vue2": "cd packages/vue2 && pnpm run build",
+    "build:vue3": "cd packages/vue3 && pnpm run build"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
